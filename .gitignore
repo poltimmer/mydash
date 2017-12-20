@@ -1,0 +1,10 @@
+*.pyc
+*~
+__pycache__
+myenv
+db.sqlite3
+dash.db
+/static
+.DS_Store
+open.bat
+runserver.bat

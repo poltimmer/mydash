@@ -1,0 +1,402 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    body {
+        ;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    padding: 5px;
+}
+
+hr {
+    width: 70%;
+    max-width: 250px;
+    background-color: #7ddedb;
+}
+
+.no-margin {
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-brand {
+    margin: auto;
+    font-family: 'Leckerli One', cursive;
+    font-size: 25px;
+    padding: 0;
+}
+
+.navbar .navbar-brand span {
+    color: #66efdf;
+}
+
+.bg-nav {
+    background: #2a2d2e;
+}
+
+.content-section {
+    padding-top: 56px;
+}
+
+.main-bg {
+    background: url("../img/big-one.jpg") no-repeat center center scroll;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    z-index: -1;
+}
+
+.bg-light-trans > div {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+#content-section > div > div {
+    border: 0px solid rgba(237, 237, 237, 0.9);
+    border-radius: 3px;
+
+}
+
+.to-do {
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+}
+
+.to-do:hover {
+    background: rgba(255, 255, 255, 0.97);
+}
+
+.add-box {
+    position: relative;
+    padding: 10px;
+}
+
+.add-box h4 {
+    font-weight: 200;
+}
+
+/* Include the padding and border in an element's total width and height */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+
+/* Style the list items */
+
+/* Style the close button */
+
+/* Style the header */
+
+.to-do .header {
+    background-color: #64ccd4;
+    padding: 20px 15px;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    border: 0px solid transparent;
+}
+
+/* Clear floats after the header */
+
+.to-do .header:after {
+    content: "";
+    display: table;
+    clear: both;
+    border-radius: 3px;
+    border: 0px solid transparent;
+}
+
+.to-do .header p {
+    margin-bottom: 0;
+    font-weight: 200;
+}
+
+.closeBtn {
+    text-align: right;
+    cursor: pointer;
+    display: inline-flex;
+    margin: auto 6px;
+
+}
+
+#toDoList {
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+#toDoList li {
+    width: 100%;
+    max-width: 450px;
+    min-height: 40px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    margin: 3px auto;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+#toDoList li span {
+    margin: auto 2px;
+}
+
+#editing {
+    width: 50%;
+    height: 21px;
+    font-size: 16px;
+    padding-left: 0px;
+    border-radius: 3px;
+    background-color: #fcfcfc;
+    outline: none;
+    margin: auto 0;
+}
+
+.color-tag {
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: #00b500;
+}
+
+.blue {
+    background: blue;
+}
+
+
+/* Style the input */
+
+input {
+    border: 1px solid #d1d1d1;
+    padding: 3px 10px;
+    font-size: 16px;
+    background: #f4f4f4;
+    height: 28px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#myInput {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    width: 75%;
+    height: 30px;
+}
+
+#google-box {
+    font: 18px arial, sans-serif;
+    line-height: 36px;
+    background-color: white;
+    background-image: url(../img/Google-favicon-2015.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    outline: none;
+    width: 200px;
+    height: 44px;
+    border-radius: 2px;
+    margin: 30px auto;
+    float: left;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    transition: 0.4s;
+    padding: 3px 5px;
+}
+
+#google-box:focus {
+    background-image: none;
+}
+
+#google-box::placeholder,
+#google-box::ms-input-placeholder,
+#google-box::-moz-placeholder {
+    bottom: 4px;
+    color: rgba(0, 0, 0, 0.38);
+    left: 13px;
+    right: 13px;
+    top: 4px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#google-box:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.32), 0 0 0 1.5px rgba(0, 0, 0, 0.16);
+
+}
+
+@media (min-width: 768px) {
+
+    #google-box:focus {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    #google-box {
+        width: 100%;
+    }
+}
+
+.news-list-title {
+    margin-bottom: 20px;
+}
+
+#news-list {
+    padding: 15px 10px;
+}
+
+@media (max-width: 992px) {
+    #news-list {
+        padding: 30px 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    #news-list {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    #news-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#news-list li {
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.news-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.news-title {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding: 5;
+}
+
+.news-description {
+    color: black;
+    padding: 5;
+}
+
+/* Style the "Add" button */
+
+#addform {
+    border: 1px solid #d1d1d1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0px 10px;
+    height: 30px;
+    width: 17%;
+    background: #6891ff;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.addBtn:hover {
+    background-color: #42c7a3;
+}
+
+#temp-p {
+    display: inline-block;
+    margin: auto;
+    margin-left: 5px;
+}
+
+#temp {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.weather {
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+
+.topflex {
+    display: flex;
+}
+
+.botflex {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather h3 {
+    padding-top: 8px;
+    text-align: center;
+}
+
+#weathericon2 {}
+
+.weather-desc {
+    padding: 0;
+    margin-top: -10px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.icon-desc {
+    margin: auto;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.friends {
+    height: 500px;
+}

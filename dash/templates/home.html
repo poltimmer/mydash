@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center google-div">
+            <div id="google-div">
+                <input id="google-box" type="text" placeholder="">
+            </div>
+        </div>
+    </div>
+    <div class="row" id="content-section">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="to-do">
+                <div id="myDIV" class="header">
+                    <h3>Here's what we're doing today.</h3>
+                    <p>Tap your tasks to edit them!</p>
+                </div>
+                <ol id="toDoList">
+                  {% for task in tasks %}
+                    <li><span>{{ task.title }}</span><i class="closeBtn fa fa-times-circle fa-lg"></i></li>
+                  {% endfor %}
+                </ol>
+                <hr class="no-margin">
+                <div class="add-box text-center">
+                    <h4>Want to add a task?</h4>
+                    <form method="post" >
+                    {% csrf_token %}
+                      <input name="title" id="myInput" placeholder="Title..."></input>
+                      <input id="addform" type="submit" value="Add" />
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 bg-light-trans">
+            <div class="weather">
+                <h3>'s-Hertogenbosch</h3>
+                <hr>
+                <div class="botflex">
+                    <div class="icon-desc">
+                        <i id="weathericon2" class="owf owf-3x"></i>
+                        <p class="weather-desc"><span id="weather-desc"></span></p>
+                    </div>
+                    <p id="temp-p"><span id="temp"></span> &#x2103;</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 bg-light-trans">
+            <div class="news">
+                <ul id="news-list">
+                    <h3 class="news-list-title">The latest news</h3>
+                </ul>
+            </div>
+        </div>
+        <!--<div class="col-lg-4 col-sm-12 bg-light-trans">
+            <div class="friends">
+
+            </div>
+        </div>-->
+    </div>
+</div>
+{% endblock %}
