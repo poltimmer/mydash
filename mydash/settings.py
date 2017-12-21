@@ -25,7 +25,7 @@ SECRET_KEY = '#11gbp@1=h9-6x5bzc^++mka_(%@vasnq17n^3vthds=*n+^f#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'poltimmer.pythonanywhere.com',]
 
 
 # Application definition
