@@ -95,7 +95,7 @@ $(document).ready(
 
         $('#toDoList').sortable();
 
-        $.getJSON('https://api.openweathermap.org/data/2.5/weather?id=2747350&APPID=7ab4eadd5d34faceb2b0296029151c28&units=metric', function (forecast) {
+        $.getJSON('https://api.openweathermap.org/data/2.5/weather?id=2756252&APPID=7ab4eadd5d34faceb2b0296029151c28&units=metric', function (forecast) {
             var temp = Math.round(forecast.main.temp * 10) / 10;
             var icon2 = forecast.weather[0].id;
             let desc = forecast.weather[0].description;
