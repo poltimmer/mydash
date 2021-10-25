@@ -1,2 +1,2 @@
 # mydash
-Dashboard assinment for the TU/e course "Web Technologies".
+Dashboard assinment for the TU/e undergrad course "Web Technologies".
